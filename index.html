@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Import an external CSS file -->
+</head>
+
+<body>
+  <div class="dflex"> <!-- Container for the entire content -->
+    <div class="main-container"> <!-- Main content container -->
+      <div class="head">
+        <h1>ROCK PAPER SCISSORS</h1> <!-- Main title -->
+        <div class="score">
+          <span>SCORE</span>
+          <p class="js-score"></p> <!-- Element to display the game score using JavaScript -->
+        </div>
+      </div>
+      <div class="result-text image">
+        <div class="js-move">
+          <p class="choice">SELECT ANY OPTION</p>
+          <div class="border">
+            <div class="image-center result">
+              <img class="img" src="rock.png" alt="rock" onclick="playGame('Rock')">
+              <img class="img" src="paper.png" alt="paper" onclick="playGame('Paper')">
+              <img class="img" src="scissors.png" alt="scissors" onclick="playGame('Scissors')">
+            </div>
+          </div>
+        </div>
+        <p class="js-result"></p> <!-- Element to display the game result using JavaScript -->
+        <div class="js-total total"></div> <!-- Element to display the total score using JavaScript -->
+      </div>
+      <div class="btn-flex js-again"> <!-- Container for the "Reset Score" button -->
+        <button class="btn" onclick="resetScore();">Reset Score</button>
+        <!-- Button to reset the game score when clicked by calling the JavaScript function resetScore -->
+      </div>
+    </div>
+    <script src="script.js"></script> <!-- Include an external JavaScript file for the game logic -->
+  </div>
+</body>
+
+</html>

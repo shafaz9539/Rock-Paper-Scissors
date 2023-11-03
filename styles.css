@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Courier, monospace, sans-serif;
+}
+
+body {
+
+  color: white;
+}
+
+h1 {
+  width: 50px;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: .95;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 400px;
+  background: transparent;
+  border: 2px solid rgb(151, 168, 192);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.score {
+  background-color: rgb(151, 168, 192);
+  color: rgb(36, 36, 36);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.js-score {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.score span {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.4);
+  transition: 0.01s;
+}
+
+.img:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(151, 168, 192);
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.image-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 7px;
+  height: 250px;
+  width: 270px;
+}
+
+
+.dflex {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: radial-gradient(circle, rgb(24, 28, 65) 0%, rgb(6, 7, 17) 100%);
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.result-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.post-result {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+
+.choice {
+  font-size: 20px;
+  font-weight: 550;
+  margin-bottom: 30px;
+}
+
+.you {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.btn-result {
+  font-size: 22px;
+  font-weight: 550;
+  margin-top: 20px;
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 150;
+
+  padding: 10px 20px;
+  background-color: rgb(151, 168, 192);
+  color: rgb(26, 25, 25);
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.4);
+  border: none;
+  transition: 0.01s;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.total {
+  font-size: 13px;
+  margin-top: 13px;
+}
